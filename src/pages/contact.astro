@@ -1,0 +1,15 @@
+---
+import Navbar from "../components/Navbar.astro";
+import Layout from "../layouts/Layout.astro";
+import { ClientRouter } from "astro:transitions";
+---
+<ClientRouter transition:animate={"initial"}/>
+<Navbar/>
+<Layout>
+    <div>
+        <h1>Contact us!</h1>
+        <div class="flex flex-row mx-auto p-3">
+            <a href="https://google.com" target="_blank">Instagram</a>
+        </div>
+    </div>
+</Layout>

@@ -1,0 +1,17 @@
+---
+import Navbar from "../components/Navbar.astro";
+import Layout from "../layouts/Layout.astro";
+import { ClientRouter } from "astro:transitions";
+---
+<ClientRouter transition:animate={"slide"}/>
+<Navbar/>
+<Layout>
+    <div>
+        <h1 class="text-3xl">About us</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
+            corporis dolores non quia impedit eos doloremque quae adipisci
+            recusandae earum?
+        </p>
+    </div>
+</Layout>
